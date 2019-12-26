@@ -1,0 +1,97 @@
+@import "../../../css/color/color";
+
+.v-radio {
+
+  display: inline-block;
+  margin-right: 30px;
+  color: $--color-font-default;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: $--color-white;
+  user-select: none;
+  cursor: pointer;
+
+  &.outBorder {
+
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    &:not(.disabled):hover {
+      border-color: $--bg-primary-lighter;
+    }
+  }
+
+  &.checked {
+
+    .v-radio-icon {
+      border-color: $--bg-primary;
+      background-color: $--bg-primary;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: calc(50% - 2px);
+        border-radius: 100%;
+        width: 4px;
+        height: 4px;
+        background-color: white;
+      }
+    }
+
+    &.disabled {
+      color: #c0c4cc;
+      cursor: not-allowed;
+
+      .v-radio-icon {
+        opacity: .5;
+      }
+    }
+
+    &:not(.disabled):hover .v-radio-icon {
+      border-color: $--bg-primary-lighter;
+    }
+  }
+
+  &:not(.checked) {
+
+    &.disabled {
+      color: #c0c4cc;
+      cursor: not-allowed;
+
+      .v-radio-icon {
+        background-color: #f5f7fa;
+      }
+    }
+
+    &:not(.disabled):hover .v-radio-icon {
+      border-color: $--bg-primary-lighter;
+    }
+  }
+
+  .v-radio-icon {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #dcdfe6;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+  }
+
+  .v-radio-content {
+    vertical-align: middle;
+  }
+}
+
+
+
+
+
+

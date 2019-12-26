@@ -1,0 +1,35 @@
+@import "../../../css/popper/arrow";
+@import "../../../css/popper/darktheme";
+
+.v-tooltip {
+
+  display: inline-block;
+  position: relative;
+
+  .v-popper {
+
+    border-radius: 5px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+    line-height: 1.5rem;
+    font-size: 14px;
+    font-weight: normal;
+
+    &.v-light {
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+
+    &.v-dark {
+      @include darkTheme();
+    }
+
+    .v-popper-content {
+      padding: 5px 15px;
+      max-height: 300px;
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    @include arrowLeftDeviation();
+  }
+}

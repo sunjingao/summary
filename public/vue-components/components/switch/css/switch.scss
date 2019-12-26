@@ -1,0 +1,62 @@
+.v-switch {
+
+  display: inline-flex;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1;
+  text-align: center;
+  align-items: center;
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  .v-switch-before {
+    margin-right: 10px;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .v-switch-behind {
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .v-switch-middle {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    .v-switch-middle-before-circle {
+      position: absolute;
+      top: 0;
+      border-radius: 50%;
+    }
+
+    .v-switch-middle-circle {
+      position: absolute;
+    }
+
+    .v-switch-middle-behind-circle {
+      position: absolute;
+      top: 0;
+      border-radius: 50%;
+    }
+
+    .v-switch-middle-move-circle {
+      position: absolute;
+      top: 1px;
+      border-radius: 50%;
+    }
+  }
+}

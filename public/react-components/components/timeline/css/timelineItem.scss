@@ -1,0 +1,55 @@
+
+.v-timeline-item {
+
+  display: flex;
+
+  .v-chart-part {
+
+    .v-circular {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      font-size: 10px;
+    }
+
+    .v-line {
+      width: 1px;
+      height: calc(100% - 5px);
+      margin-left: 5px;
+
+      &.v-isLast {
+        height: 0;
+      }
+    }
+  }
+
+  .v-words-part {
+
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+
+    .v-description {
+      color: #303133;
+      line-height: 1;
+      font-size: 14px;
+
+      &.v-bottom {
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .v-time {
+      color: #909399;
+      line-height: 1;
+      font-size: 14px;
+
+      &.v-bottom {
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

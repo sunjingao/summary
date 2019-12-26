@@ -1,0 +1,106 @@
+@import "../../../css/popper/arrow";
+@import "../../../css/animation/transition";
+
+.v-cascader {
+
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  .v-input-content {
+    padding: 0 26px 0 15px !important;
+  }
+
+  .v-select-direction {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 0;
+    width: 26px;
+    text-align: center;
+    pointer-events: none;
+
+    > i {
+      display: inline-block;
+      @include v-transition-time();
+
+      &.v-up {
+        transform-origin: center center;
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  .v-panel {
+
+    display: flex;
+    align-items: flex-start;
+
+    & > .v-cascader-auto {
+
+      display: inline-block;
+      font-size: 14px;
+      font-weight: normal;
+      color: #606266;
+      overflow: auto;
+
+      & > .v-cascader-ul {
+
+        & > li {
+          position: relative;
+          padding: 0 20px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+          &.v-over,
+          &.v-selected {
+            color: #409eff;
+            font-weight: 700;
+          }
+
+          &.v-disabled {
+            color: #c0c4cc;
+            cursor: not-allowed;
+          }
+
+          &:not(.v-disabled):hover {
+            background: #f5f7fa;
+            cursor: pointer;
+          }
+
+          & > .v-directionLeft {
+            display: inline-block;
+            position: absolute;
+            left: 2px;
+          }
+
+          & > .v-directionRight {
+            display: inline-block;
+            position: absolute;
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .v-popper {
+
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+
+    .v-popper-content {
+      padding: 5px 0;
+      max-height: 300px;
+      overflow: auto;
+    }
+
+    @include arrowLeftDeviation();
+  }
+}
+
+
+

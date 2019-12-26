@@ -1,0 +1,39 @@
+
+.v-breadcrumbItem {
+
+  display: inline-flex;
+  position: relative;
+  padding: 5px 0;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: normal;
+  color: #303133;
+  white-space: nowrap;
+
+  &.v-showHref {
+    font-weight: 700;
+
+    &:hover {
+      cursor: pointer;
+      color: #409eff;
+    }
+  }
+
+  a {
+    color: #303133;;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      color: #409eff;
+    }
+  }
+
+  .v-separator {
+    margin: 0 6px;
+    font-weight: normal;
+    color: #303133;
+    cursor: default;
+  }
+}

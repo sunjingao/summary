@@ -1,0 +1,30 @@
+
+.v-option {
+  position: relative;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #606266;
+  line-height: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+
+  &.active {
+    color: #409eff;
+    font-weight: 700;
+  }
+
+  &.disabled {
+    color: #c0c4cc;
+    cursor: not-allowed;
+  }
+
+  &:not(.disabled):hover {
+    background-color: #f5f7fa;
+  }
+}
+
+
+

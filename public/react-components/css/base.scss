@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+//为了方便外部动态引入组件，在此引入 iconfont
+@import "../font/iconfont.css";
+
+ol[class^='v-'],
+ul[class^='v-'] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[class^='v-']::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[class^='v-'],
+img[class^='v-'] {
+  border: none;
+}
+
+table[class^='v-'] {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+input[class^='v-'],
+button[class^='v-'],
+select[class^='v-'],
+textarea[class^='v-'] {
+  outline: none;
+  -webkit-appearance: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input:disabled {
+  background-color: #f5f7fa;
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+
+/*滚动条样式 start*/
+
+.v-hover-show-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.v-hover-show-scrollbar:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.v-hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+[class^='v-']::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+[class^='v-']::-webkit-scrollbar-track-piece {
+  //背景
+  background-color: transparent;
+  -webkit-border-radius: 6px;
+}
+
+[class^='v-']::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  //这里是展示的线
+  background-color: rgba(#909399, .3);
+  -webkit-border-radius: 6px;
+}
+
+[class^='v-']::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: rgba(#909399, .5);
+}
+
+[class^='v-']::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(#909399, .3);
+  -webkit-border-radius: 6px;
+}
+
+[class^='v-']::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: rgba(#909399, .5);
+}
+
+/*https://www.lyblog.net/detail/314.html*/
+/*滚动条样式 end*/
+
+.v-w100 {
+  width: 100%;
+}
+
+.v-h100 {
+  height: 100%;
+}
+
+.v-dib {
+  display: inline-block;
+}
+
+.v-pr {
+  position: relative;
+}
+
+.v-fl {
+  float: left;
+}
+
+.v-fs0 {
+  font-size: 0;
+}
+
+.v-fs12 {
+  font-size: 12px;
+}
+
+.v-fix {
+  zoom: 1;
+}
+
+.v-noSelect {
+  user-select: none;
+}
+
+.v-fix:after {
+  display: block;
+  content: "clear";
+  clear: both;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.v-vaM {
+  vertical-align: middle;
+}
+
+.v-taC {
+  text-align: center;
+}
+
+.v-oxA {
+  overflow-x: auto;
+}
+
+.v-oyA {
+  overflow-y: auto;
+}
+
+.v-pa1 {
+  z-index: 1;
+}
+
+.v-hidden {
+  overflow: hidden;
+}
+
+.icon-loading:before {
+  display: inline-block;
+  animation: loadingAni 2s infinite linear;
+}
+
+@keyframes loadingAni {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

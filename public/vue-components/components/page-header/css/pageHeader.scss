@@ -1,0 +1,27 @@
+
+.v-pageHeader {
+  display: inline-flex;
+  position: relative;
+  line-height: 1.5;
+  color: #303133;
+  align-items: center;
+  vertical-align: middle;
+
+  .title-part {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .separate-part {
+    margin-left: 20px;
+    font-weight: 300;
+    color: #dcdfe6;
+  }
+
+  .content-part {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

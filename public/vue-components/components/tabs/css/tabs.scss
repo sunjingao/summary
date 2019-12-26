@@ -1,0 +1,82 @@
+
+.v-tabs {
+
+  position: absolute;
+  display: flex;
+  background-color: #fff;
+
+  &.top {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &.default .seat {
+      flex: 1;
+      border-bottom: 2px solid #dcdfe6;
+      margin-left: -2px;
+    }
+
+    &.card .seat {
+      flex: 1;
+      border-bottom: 1px solid #dcdfe6;
+      margin-left: -1px;
+    }
+  }
+
+  &.right {
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    &.default .seat {
+      flex: 1;
+      border-left: 2px solid #dcdfe6;
+      margin-top: -2px;
+    }
+
+    &.card .seat {
+      flex: 1;
+      border-left: 1px solid #dcdfe6;
+      margin-top: -1px;
+    }
+  }
+
+  &.bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    &.default .seat {
+      flex: 1;
+      border-top: 2px solid #dcdfe6;
+      margin-left: -2px;
+    }
+
+    &.card .seat {
+      flex: 1;
+      border-top: 1px solid #dcdfe6;
+      margin-left: -1px;
+    }
+  }
+
+  &.left {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    &.default .seat {
+      flex: 1;
+      border-right: 2px solid #dcdfe6;
+      margin-top: -2px;
+    }
+
+    &.card .seat {
+      flex: 1;
+      border-right: 1px solid #dcdfe6;
+      margin-top: -1px;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@import "../../../css/popper/arrow";
+
+.v-timeauto {
+
+  .showBorder {
+    border: 1px solid #e4e7ed;
+  }
+
+  .showBottomBorder {
+    border-bottom: 1px solid #e4e7ed;
+  }
+
+  .ml10 {
+    margin-left: 10px;
+  }
+
+  .p5 {
+    padding: 5px;
+  }
+
+  .forbiddenSelected {
+    opacity: 0.5;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  .overClass:hover {
+    background-color: #f5f7fa;
+    cursor: pointer;
+  }
+
+  .selected {
+    color: #303133;
+    font-weight: 700;
+  }
+
+  .time-area {
+    display: flex;
+    flex-wrap: nowrap;
+    color: #606266;
+    font-size: 12px;
+    font-weight: normal;
+
+    .startOrEnd-part {
+      display: inline-block;
+      position: relative;
+
+      .start-or-end-part_title {
+        height: 30px;
+        line-height: 30px;
+        text-align: center
+      }
+
+      .hourAndMinuteAndSecond-part {
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+
+        .v-hourOrMinuteOrSecond-part_ul {
+          display: inline-block;
+          list-style: none;
+          overflow-y: auto;
+
+          &::before {
+            content: " ";
+            position: absolute;
+            z-index: 100;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            top: 40%;
+            background-color: #e4e7ed;
+          }
+
+          &::after {
+            content: " ";
+            position: absolute;
+            z-index: 100;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            top: 60%;
+            background-color: #e4e7ed;
+          }
+
+          li {
+            text-align: center;
+            user-select: none;
+          }
+        }
+      }
+    }
+  }
+
+  .button-area {
+
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+
+    & > span {
+
+      padding: 10px 5px 5px 5px;
+
+      &.confirm {
+        color: #409eff
+      }
+
+      &:hover {
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+
+  &.v-popper {
+    border: 1px solid #dcdfe6;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+
+    .v-popper-content {
+      padding: 5px 0;
+      max-height: 300px;
+      overflow: auto;
+    }
+
+    @include arrowLeftDeviation();
+  }
+}
+
+
+
+
+
+
+
+
+

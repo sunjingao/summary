@@ -1,0 +1,93 @@
+@import "../../../css/color/color";
+
+@mixin link-type() {
+
+  &.default {
+
+    &:hover {
+      color: $--bg-primary-lighter;
+    }
+    &:active {
+      color: $--bg-primary-heavier;
+    }
+  }
+
+  &.primary {
+    color: $--bg-primary;
+    &:hover {
+      color: $--bg-primary-lighter;
+    }
+    &:active {
+      color: $--bg-primary-heavier;
+    }
+  }
+
+  &.success {
+    color: $--bg-success;
+    &:hover {
+      color: $--bg-success-lighter;
+    }
+    &:active {
+      color: $--bg-success-heavier;
+    }
+  }
+
+  &.info {
+    color: $--bg-info;
+    &:hover {
+      color: $--bg-info-lighter;
+    }
+    &:active {
+      color: $--bg-info-heavier;
+    }
+  }
+
+  &.warning {
+    color: $--bg-warning;
+    &:hover {
+      color: $--bg-warning-lighter;
+    }
+    &:active {
+      color: $--bg-warning-heavier;
+    }
+  }
+
+  &.danger {
+    color: $--bg-danger;
+    &:hover {
+      color: $--bg-danger-lighter;
+    }
+    &:active {
+      color: $--bg-danger-heavier;
+    }
+  }
+}
+
+.v-link {
+
+  cursor: pointer;
+  color: #606266;
+  font-weight: normal;
+  font-size: 1rem;
+  vertical-align: middle;
+
+  &.disabled {
+    opacity: .5;
+    user-select: none;
+    cursor: not-allowed;
+  }
+
+  span {
+
+    display: inline-block;
+
+    &:not(.disabled) {
+
+      &.underline:hover {
+        text-decoration: underline;
+      }
+
+      @include link-type();
+    }
+  }
+}

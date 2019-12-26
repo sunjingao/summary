@@ -1,0 +1,28 @@
+.infinite-list{
+  border: 1px solid gray;
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+}
+
+.infinite-ul {
+  list-style-type: none;
+}
+
+.infinite-list-item{
+  width: 80%;
+  height: 100px;
+  line-height: 100px;
+  background: #e8f3fe;
+  margin: 10px;
+  color: #7dbcfc;
+}
+
+.infinite-footer {
+  margin: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #5e6d82;
+  text-align: center;
+}

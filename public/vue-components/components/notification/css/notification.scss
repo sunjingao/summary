@@ -1,0 +1,28 @@
+@import "../../../css/animation/transition";
+
+.v-notification {
+  position: fixed !important;
+  min-width: 380px;
+
+  &.v-notification-right {
+    right: 0;
+    transform: translateX(100%);
+    transition-property: transform;
+    @include v-transition-time();
+  }
+
+  &.v-notification-right-show {
+    transform: translateX(0);
+  }
+
+  &.v-notification-left {
+    left: 0;
+    transform: translateX(-100%);
+    transition-property: transform;
+    @include v-transition-time();
+  }
+
+  &.v-notification-left-show {
+    transform: translateX(0);
+  }
+}

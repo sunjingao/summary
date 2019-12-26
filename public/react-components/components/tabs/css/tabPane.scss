@@ -1,0 +1,176 @@
+
+.v-tab-pane {
+
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &.v-disabled {
+    color: #C0C4CC;
+    cursor: not-allowed;
+  }
+
+  &.v-top {
+
+    height: 40px;
+    line-height: 38px;
+    padding: 0 20px;
+
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+
+    &.default {
+
+      border-bottom: 2px solid #dcdfe6;
+
+      &:not(.v-disabled):hover {
+        color: #409eff;
+      }
+
+      &.v-active {
+        color: #409eff;
+        border-bottom-color: #409eff;
+      }
+    }
+
+    &.card {
+
+      border: 1px solid #dcdfe6;
+
+      &:not(.v-disabled):hover {
+        color: #409eff;
+      }
+
+      &.v-active {
+        color: #409eff;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  &.v-right {
+
+    height: 40px;
+    line-height: 38px;
+    padding: 0 20px;
+    text-align: right;
+
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+
+    &.default {
+
+      border-left: 2px solid #dcdfe6;
+
+      &:not(.v-disabled):hover {
+        color: #409eff;
+      }
+
+      &.v-active {
+        color: #409eff;
+        border-left-color: #409eff;
+      }
+    }
+    &.card {
+
+      border: 1px solid #dcdfe6;
+
+      &:not(.v-disabled):hover {
+        color: #409eff;
+      }
+
+      &.v-active {
+        color: #409eff;
+        border-left-color: transparent;
+      }
+    }
+  }
+
+  &.v-bottom {
+
+    height: 40px;
+    line-height: 38px;
+    padding: 0 20px;
+
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+
+    &.default {
+
+      border-top: 2px solid #dcdfe6;
+
+      &:not(.v-disabled):hover {
+        color: #409eff;
+      }
+
+      &.v-active {
+        color: #409eff;
+        border-top-color: #409eff;
+      }
+    }
+    &.card {
+
+      border: 1px solid #dcdfe6;
+
+      &:not(.v-disabled):hover {
+        color: #409eff;
+      }
+
+      &.v-active {
+        color: #409eff;
+        border-top-color: transparent;
+      }
+    }
+  }
+
+  &.v-left {
+
+    height: 40px;
+    line-height: 38px;
+    padding: 0 20px;
+    text-align: left;
+
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+
+    &.default {
+
+      border-right: 2px solid #dcdfe6;
+
+      &:not(.v-disabled):hover {
+        color: #409eff;
+      }
+
+      &.v-active {
+        color: #409eff;
+        border-right-color: #409eff;
+      }
+    }
+
+    &.card {
+
+      border: 1px solid #dcdfe6;
+
+      &:not(.v-disabled):hover {
+        color: #409eff;
+      }
+
+      &.v-active {
+        color: #409eff;
+        border-right-color: transparent;
+      }
+    }
+  }
+
+  .v-content {
+
+    .v-close {
+      position: absolute;
+      right: 5px;
+    }
+  }
+}

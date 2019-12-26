@@ -1,0 +1,23 @@
+.circular-test {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #e4e7ed;
+}
+
+.line-test {
+  width: 2px;
+  height: calc(100% - 10px);
+  margin-left: 9px;
+  background-color: #e4e7ed;
+}
+
+.line-test.isLast {
+  height: 0;
+}
+
+.mb20 {
+  margin-bottom: 20px;;
+}

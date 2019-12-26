@@ -1,0 +1,54 @@
+.v-rate {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  .v-mr5 {
+    margin-right: .5rem;
+  }
+
+  .v-font {
+    font-size: 1rem;
+    color: gray;
+    line-height: 1;
+  }
+
+  .v-rate-content {
+
+    display: inline-flex;
+    position: relative;
+
+    .v-item {
+      display: inline-block;
+      position: relative;
+      height: 1rem;
+      width: 1.5rem;
+      color: gray;
+      font-size: .8rem;
+      overflow: hidden;
+
+      .v-rate-pointer {
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1)
+        }
+      }
+
+      .v-rate-item-select-color {
+        color: red;
+      }
+
+      .v-item-score-select {
+        width: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+
+

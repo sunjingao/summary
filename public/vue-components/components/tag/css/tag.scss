@@ -1,0 +1,118 @@
+@import "../../../css/color/color";
+
+@mixin tag-type() {
+
+  &.default {
+
+    background-color: $--color-white;
+
+    & > .delete {
+
+      &:hover {
+        color: $--bg-default-heavier;
+      }
+    }
+  }
+
+  &.primary {
+
+    color: $--bg-primary-heavier;
+    background-color: $--bg-primary-plain;
+
+    & > .delete {
+
+      color: $--bg-primary;
+
+      &:hover {
+        color: $--bg-primary-heavier;
+      }
+    }
+  }
+
+  &.success {
+
+    color: $--bg-success-heavier;
+    background-color: $--bg-success-plain;
+
+    & > .delete {
+
+      color: $--bg-success;
+
+      &:hover {
+        color: $--bg-success-heavier;
+      }
+    }
+  }
+
+  &.info {
+
+    color: $--bg-info-heavier;
+    background-color: $--bg-info-plain;
+
+    & > .delete {
+
+      color: $--bg-info;
+
+      &:hover {
+        color: $--bg-info-heavier;
+      }
+    }
+  }
+
+  &.warning {
+
+    color: $--bg-warning-heavier;
+    background-color: $--bg-warning-plain;
+
+    & > .delete {
+
+      color: $--bg-warning;
+
+      &:hover {
+        color: $--bg-warning-heavier;
+      }
+    }
+  }
+
+  &.danger {
+
+    color: $--bg-danger-heavier;
+    background-color: $--bg-danger-plain;
+
+    & > .delete {
+
+      color: $--bg-danger;
+
+      &:hover {
+        color: $--bg-danger-heavier;
+      }
+    }
+  }
+}
+
+.v-tag {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #909399;
+  white-space: nowrap;
+  background-color: #f0f2f5;
+  vertical-align: middle;
+
+  .delete {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: inherit;
+    color: #c0c4cc;
+
+    &:hover {
+      color: #909399;
+    }
+  }
+
+  @include tag-type();
+}
+

@@ -1,0 +1,119 @@
+@import "../../../css/color/color";
+
+@mixin alert-type() {
+
+  &.tip {
+
+    color: $--color-white;
+    background-color: $--bg-info;
+    border-color: $--bg-info;
+
+    &.isPlain {
+      color: $--bg-info-heavier;
+      background-color: $--bg-info-plain;
+      border-color: $--bg-info-lighter;
+    }
+  }
+
+  &.success {
+
+    color: $--color-white;
+    background-color: $--bg-success;
+    border-color: $--bg-success;
+
+    &.isPlain {
+      color: $--bg-success-heavier;
+      background-color: $--bg-success-plain;
+      border-color: $--bg-success-lighter;
+    }
+  }
+
+  &.warning {
+
+    color: $--color-white;
+    background-color: $--bg-warning;
+    border-color: $--bg-warning;
+
+    &.isPlain {
+      color: $--bg-warning-heavier;
+      background-color: $--bg-warning-plain;
+      border-color: $--bg-warning-lighter;
+    }
+  }
+
+  &.error {
+
+    color: $--color-white;
+    background-color: $--bg-danger;
+    border-color: $--bg-danger;
+
+    &.isPlain {
+      color: $--bg-danger-heavier;
+      background-color: $--bg-danger-plain;
+      border-color: $--bg-danger-heavier;
+    }
+  }
+}
+
+.v-alert-part {
+
+  position: relative;
+  display: flex;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: normal;
+  color: #909399;
+  background-color: #f4f4f5;
+
+  &.is-center {
+    justify-content: center;
+  }
+
+  @include alert-type();
+
+  .icon {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    text-align: center;
+
+    i {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  .content {
+    display: inline-block;
+    position: relative;
+
+    .title {
+      line-height: 1.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .description {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+
+    div {
+      display: inline-block;
+      float: right;
+      margin-top: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+

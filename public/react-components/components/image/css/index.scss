@@ -1,0 +1,32 @@
+
+.v-image {
+
+  position: relative;
+
+  .v-alt-part {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: normal;
+    font-size: 14px;
+    color: #c0c4cc;
+  }
+
+  .v-error-part {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: normal;
+    font-size: 14px;
+    color: #c0c4cc;
+  }
+
+  .v-img-part {
+    width: 100%;
+    height: 100%;
+  }
+}

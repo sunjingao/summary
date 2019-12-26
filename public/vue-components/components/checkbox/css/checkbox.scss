@@ -1,0 +1,129 @@
+@import "../../../css/color/color";
+
+.v-checkbox {
+
+  display: inline-block;
+  margin-right: 30px;
+  color: $--color-font-default;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: $--color-white;
+  user-select: none;
+  cursor: pointer;
+
+  &.outBorder {
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    &:not(.disabled):hover {
+      border-color: $--bg-primary-lighter;
+    }
+  }
+
+  &.checked {
+
+    .v-checkbox-icon {
+      border-color: $--bg-primary;
+      background-color: $--bg-primary;
+    }
+
+    .v-checkbox-icon:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 4px;
+      border-left: 2px solid white;
+      border-bottom: 2px solid white;
+
+      transform: rotate(-50deg);
+      transform-origin: center center;
+      top: calc(50% - 2px);
+      left: calc(50% - 4px);
+    }
+
+    &.disabled {
+      color: #c0c4cc;
+      cursor: not-allowed;
+
+      .v-checkbox-icon {
+        opacity: .5;
+      }
+    }
+  }
+
+  &.notAll {
+
+    .v-checkbox-icon {
+      border-color: $--bg-primary;
+      background-color: $--bg-primary;
+    }
+
+    .v-checkbox-icon:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 6px;
+      height: 2px;
+      background-color: #fff;
+
+      top: calc(50% - 1px);
+      left: calc(50% - 3px);
+    }
+
+    &:not(.disabled):hover .v-checkbox-icon {
+      border-color: $--bg-primary-lighter;
+    }
+
+    &.disabled {
+      color: #c0c4cc;
+      cursor: not-allowed;
+
+      .v-checkbox-icon {
+        opacity: .7;
+      }
+    }
+  }
+
+  &:not(.checked):not(.notAll) {
+
+    &.disabled {
+      color: #c0c4cc;
+      cursor: not-allowed;
+
+      .v-checkbox-icon {
+        background-color: #f5f7fa;
+      }
+    }
+
+    &:not(.disabled):hover .v-checkbox-icon {
+      border-color: $--bg-primary-lighter;
+    }
+  }
+
+  .v-checkbox-icon {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .v-checkbox-content {
+    vertical-align: middle;
+  }
+}
+
+
+
+
+

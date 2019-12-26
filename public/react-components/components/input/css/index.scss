@@ -1,0 +1,72 @@
+.v-input {
+  display: inline-flex;
+  position: relative;
+  border: 1px solid #dcdfe6;
+  border-radius: 5px;
+  font-size: 0;
+  color: #606266;
+  vertical-align: middle;
+  white-space: nowrap;
+  align-items: center;
+
+  &:not(.v-disabled):hover {
+    border-color: #c0c4cc;
+  }
+
+  &:not(.v-disabled).v-focus {
+    border-color: #409eff;
+  }
+
+  .v-input-front {
+    display: inline-block;
+    position: relative;
+  }
+
+  .v-input-behind {
+    display: inline-block;
+    position: relative;
+  }
+
+  .v-input-content {
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 2px);
+    padding: 0 15px;
+    border-radius: 5px;
+
+    &.v-disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  .v-icon-clear {
+    display: inline-block;
+    color: #cdcdcd;
+    padding-right: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+
+    &.v-hidden {
+      visibility: hidden;
+    }
+
+    &:hover {
+      color: #333333;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+
+
+
+
+
+
+
+

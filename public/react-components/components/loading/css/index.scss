@@ -1,0 +1,31 @@
+@import "../../../css/animation/transition";
+
+.v-loading {
+
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: normal;
+  color: #409eff;
+  @include v-transition-time();
+
+  .v-content  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+
+    .v-loading-img {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 30px;
+    }
+
+    .v-text {
+      line-height: 1.5;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+}

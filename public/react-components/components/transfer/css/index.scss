@@ -1,0 +1,120 @@
+.v-transfer {
+  display: inline-block;
+  position: relative;
+  color: #606266;
+  font-size: 1rem;
+  font-weight: 500;
+  user-select: none;
+  white-space: nowrap;
+
+  //使得v-checkbox组件和文字更加严格的竖直对齐
+  .v-checkbox {
+    margin-right: 0;
+    margin-top: -2px;
+  }
+
+  & > .v-transferContent {
+    display: inline-block;
+    vertical-align: middle;
+
+    border: 1px solid #dcdfe6;
+    width: 202px;
+
+    & > .v-noData {
+      text-align: center;
+      line-height: 239px;
+    }
+
+    & > .v-title {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      border-bottom: 1px solid #dcdfe6;
+      padding: 0 6px;
+      font-size: 0;
+      line-height: 40px;
+      background-color: #f5f7fa;
+      cursor: pointer;
+
+      & .v-titleValue {
+        display: inline-block;
+        width: 100px;
+        height: 100%;
+        padding: 0 10px;
+        font-size: 1rem;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      & .v-selectNum {
+        display: inline-block;
+        width: 50px;
+        height: 100%;
+        text-align: right;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: .75rem;
+      }
+    }
+
+    & > ul.v-ul-content {
+      width: 100%;
+      height: 240px;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      list-style-type: none;
+      font-size: .87rem;
+
+      & > li {
+        width: 100%;
+        padding: 0 6px;
+        font-size: 0;
+        cursor: pointer;
+
+        & > .v-contentValue {
+          display: inline-block;
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          font-size: .9rem;
+          padding: 0 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          vertical-align: middle;
+        }
+
+        & .v-contentValue.v-checked {
+          color: #409eff;
+        }
+
+        & .v-contentValue:not(.v-disabled):hover {
+          color: #409eff;
+        }
+
+        &.v-disabled {
+          opacity: 0.7;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  //中间移动两侧内容的部分
+  & > .v-transferIcon {
+    position: relative;
+    padding: 0 30px;
+    vertical-align: middle;
+    display: inline-block;
+
+    .v-mb10 {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.v-dropdown-item {
+
+  padding: 5px 10px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #606266;
+  line-height: 2;
+  cursor: pointer;
+
+  &:hover {
+    color: #66b1ff;
+    background-color: #ecf5ff;
+  }
+
+  &.v-disabled {
+    color: #bbb;
+    user-select: none;
+    cursor: not-allowed;
+  }
+
+  &.v-divided {
+    border-top: 1px solid #ebeef5;
+  }
+}

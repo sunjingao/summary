@@ -1,0 +1,33 @@
+.demo-image{
+  display: flex;
+  width: 1000px;
+}
+
+.block {
+  flex: 1;
+}
+
+.demo-image__lazy{
+  width: 300px;
+  height: 300px;
+  border: 1px solid gray;
+  overflow: auto;
+}
+
+.lazy-block{
+  width: 200px;
+  height: 300px;
+}
+
+.block:not(:first-child){
+  margin-left: 20px;
+}
+
+.imageSize {
+  width: 300px;
+  height: 200px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}

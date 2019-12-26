@@ -1,0 +1,52 @@
+@import "../../../css/animation/transition";
+
+.v-collapse-item {
+
+  border-top: 1px solid #ebeef5;
+  border-bottom: 1px solid #ebeef5;
+  font-size: 13px;
+  color: #303133;
+  font-weight: normal;
+
+  .title {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+
+    &.disabled {
+      cursor: not-allowed;
+      color: #c0c4cc;;
+    }
+
+    .title-content {
+      flex: 1;
+    }
+
+    .arrow {
+      display: inline-block;
+      width: 26px;
+      pointer-events: none;
+      transform-origin: center center;
+      text-align: center;
+
+      @include v-transition-time();
+
+      &.up {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  .content {
+
+    overflow: hidden;
+    @include v-transition-time();
+
+    .words {
+      line-height: 2;
+      padding-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.v-step {
+
+  display: inline-flex;
+  flex-direction: column;
+
+  .v-chart-part {
+    display: inline-block;
+    position: relative;
+
+    .v-step-one {
+      width: 24px;
+      height: 24px;
+      border: 2px solid;
+      border-radius: 50%;
+      line-height: 24px;
+      text-align: center;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+
+      &.v-wait {
+        color: #c0c4cc;
+        border-color: #c0c4cc;
+      }
+
+      &.v-process {
+        color: #303133;
+        border-color: #303133;
+      }
+
+      &.v-success {
+        border-color: #67c23a;
+        color: #67c23a;
+      }
+
+      &.v-error {
+        border-color: #f56c6c;
+        color: #f56c6c;
+      }
+    }
+
+    .v-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      transform: translateY(-50%);
+      background-color: #c0c4cc;
+      color: #c0c4cc;
+
+      &.v-process {
+        background-color: #67c23a;
+      }
+
+      &.v-error {
+        background-color: #f56c6c;
+      }
+    }
+
+    .v-simple {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      line-height: 24px;
+    }
+  }
+
+  .v-content-part {
+
+    color: #c0c4cc;
+
+    &.v-success {
+      color: #67c23a;
+    }
+
+    &.v-process {
+      color: #303133;
+    }
+
+    &.v-wait {
+      color: #c0c4cc;
+    }
+
+    &.v-error {
+      color: #f56c6c;
+    }
+
+    .v-title {
+      white-space: nowrap;
+
+      .v-content {
+        display: inline-block;
+      }
+    }
+
+    .v-description {
+      white-space: nowrap;
+
+      .v-content {
+        display: inline-block;
+      }
+    }
+  }
+}

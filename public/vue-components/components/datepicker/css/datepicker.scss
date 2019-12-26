@@ -1,0 +1,37 @@
+@import "../../../css/popper/arrow";
+
+.v-date-picker {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  //input的front插槽样式设置
+  .v-date-picker-front {
+    padding-left: 5px;
+    vertical-align: middle
+  }
+
+  //input样式设置
+  .v-input-content {
+    padding: 0 21px 0 5px !important;
+  }
+
+  .v-popper {
+    padding: 0 5px;
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+
+    .v-popper-content {
+      width: 100%;
+      padding: 5px 0;
+      max-height: 300px;
+      overflow: auto;
+    }
+
+    @include arrowLeftDeviation();
+  }
+}
+
+

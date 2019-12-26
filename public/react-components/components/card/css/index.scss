@@ -1,0 +1,23 @@
+.v-card {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #ebeef5;
+  width: 100%;
+  padding: 5px;
+  line-height: 1.5;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #303133;
+  font-weight: normal;
+  font-size: 14px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+
+  .v-header {
+    padding: 20px 20px;
+    border-bottom: 1px solid #ebeef5;;
+  }
+
+  .v-content {
+    padding: 20px;;
+  }
+}

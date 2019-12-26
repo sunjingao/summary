@@ -1,0 +1,11 @@
+@import "../../../css/animation/transition";
+
+.v-message {
+  position: fixed !important;
+  min-width: 380px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-property: top;
+
+  @include v-transition-time();
+}

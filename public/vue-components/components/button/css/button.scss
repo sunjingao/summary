@@ -1,0 +1,204 @@
+@import "../../../css/color/color";
+
+@mixin button-type() {
+
+  &.defaultBtn {
+
+    background-color: $--color-white;
+
+    &.isPlain {
+
+      background-color: $--color-white;
+      &:not(.disabled):focus,
+      &:not(.disabled):hover {
+        background-color: $--color-white;
+      }
+
+      &:not(.disabled):active {
+        background-color: $--color-white;
+        outline: none;
+      }
+    }
+
+    &:not(.disabled):focus,
+    &:not(.disabled):hover {
+      color: $--bg-default-heavier;
+      background-color: $--bg-default-lighter;
+      border-color: $--bg-default-lighter;
+    }
+
+    &:not(.disabled):active {
+      color: $--bg-default-heavier;
+      background-color: $--bg-default-lighter;
+      border-color: $--bg-default-heavier;
+      outline: none;
+    }
+  }
+
+  &.primaryBtn {
+
+    color: $--color-white;
+    background-color: $--bg-primary;
+    border-color: $--bg-primary;
+
+    &.isPlain {
+      color: $--bg-primary-heavier;
+      background-color: $--bg-primary-plain;
+      border-color: $--bg-primary-lighter;
+    }
+
+    &:not(.disabled):focus,
+    &:not(.disabled):hover {
+      color: $--color-white;
+      border-color: $--bg-primary-lighter;
+      background-color: $--bg-primary-lighter;
+    }
+
+    &:not(.disabled):active {
+      color: $--color-white;
+      border-color: $--bg-primary-heavier;
+      background-color: $--bg-primary-heavier;
+      outline: none;
+    }
+  }
+
+  &.successBtn {
+
+    color: $--color-white;
+    background-color: $--bg-success;
+    border-color: $--bg-success;
+
+    &.isPlain {
+      color: $--bg-success-heavier;
+      background-color: $--bg-success-plain;
+      border-color: $--bg-success-lighter;
+    }
+
+    &:not(.disabled):focus,
+    &:not(.disabled):hover {
+      color: $--color-white;
+      border-color: $--bg-success-lighter;
+      background-color: $--bg-success-lighter;
+    }
+
+    &:not(.disabled):active {
+      color: $--color-white;
+      border-color: $--bg-success-heavier;
+      background-color: $--bg-success-heavier;
+      outline: none;
+    }
+  }
+
+  &.infoBtn {
+
+    color: $--color-white;
+    background-color: $--bg-info;
+    border-color: $--bg-info;
+
+    &.isPlain {
+      color: $--bg-info-heavier;
+      background-color: $--bg-info-plain;
+      border-color: $--bg-info-lighter;
+    }
+
+    &:not(.disabled):focus,
+    &:not(.disabled):hover {
+      color: $--color-white;
+      border-color: $--bg-info-lighter;
+      background-color: $--bg-info-lighter;
+    }
+
+    &:not(.disabled):active {
+      color: $--color-white;
+      border-color: $--bg-info-heavier;
+      background-color: $--bg-info-heavier;
+      outline: none;
+    }
+  }
+
+  &.warningBtn {
+
+    color: $--color-white;
+    background-color: $--bg-warning;
+    border-color: $--bg-warning;
+
+    &.isPlain {
+      color: $--bg-warning-heavier;
+      background-color: $--bg-warning-plain;
+      border-color: $--bg-warning-lighter;
+    }
+
+    &:not(.disabled):focus,
+    &:not(.disabled):hover {
+      color: $--color-white;
+      border-color: $--bg-warning-lighter;
+      background-color: $--bg-warning-lighter;
+    }
+
+    &:not(.disabled):active {
+      color: $--color-white;
+      border-color: $--bg-warning-heavier;
+      background-color: $--bg-warning-heavier;
+      outline: none;
+    }
+  }
+
+  &.dangerBtn {
+
+    color: $--color-white;
+    background-color: $--bg-danger;
+    border-color: $--bg-danger;
+
+    &.isPlain {
+      color: $--bg-danger-heavier;
+      background-color: $--bg-danger-plain;
+      border-color: $--bg-danger-heavier;
+    }
+
+    &:not(.disabled):focus,
+    &:not(.disabled):hover {
+      color: $--color-white;
+      border-color: $--bg-danger-lighter;
+      background-color: $--bg-danger-lighter;
+    }
+
+    &:not(.disabled):active {
+      color: $--color-white;
+      border-color: $--bg-danger-heavier;
+      background-color: $--bg-danger-heavier;
+      outline: none;
+    }
+  }
+}
+
+.v-button {
+  display: inline-block;
+  outline: none;
+  border: 1px solid #dcdfe6;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 1;
+  background-color: #fff;
+  color: $--color-font-default;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+
+  &.isRound {
+    border-radius: 9999px;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  @include button-type();
+}
+
+
+

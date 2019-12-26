@@ -1,0 +1,36 @@
+
+.v-badge {
+
+  position: relative;
+  display: inline-block;
+
+  .v-icon {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 0 6px;
+    transform: translate(100%, -50%);
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 1.5;
+    white-space: nowrap;
+    border-radius: 10px;
+    background-color: #f56c6c;
+    z-index: 1;
+  }
+
+  .v-dot {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    transform: translateX(100%) translateY(-100%);
+    border-radius: 50%;
+    background-color: #f56c6c;
+    z-index: 1;
+  }
+}

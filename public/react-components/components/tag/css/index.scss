@@ -1,0 +1,126 @@
+@import "../../../css/color/color";
+
+@mixin tag-type() {
+
+  &.v-default {
+
+    background-color: $--color-white;
+
+    & > .v-delete {
+
+      &:hover {
+        color: $--bg-default-heavier;
+      }
+    }
+  }
+
+  &.v-primary {
+
+    color: $--bg-primary-heavier;
+    background-color: $--bg-primary-plain;
+
+    & > .v-delete {
+
+      color: $--bg-primary;
+
+      &:hover {
+        color: $--bg-primary-heavier;
+      }
+    }
+  }
+
+  &.v-success {
+
+    color: $--bg-success-heavier;
+    background-color: $--bg-success-plain;
+
+    & > .v-delete {
+
+      color: $--bg-success;
+
+      &:hover {
+        color: $--bg-success-heavier;
+      }
+    }
+  }
+
+  &.v-info {
+
+    color: $--bg-info-heavier;
+    background-color: $--bg-info-plain;
+
+    & > .v-delete {
+
+      color: $--bg-info;
+
+      &:hover {
+        color: $--bg-info-heavier;
+      }
+    }
+  }
+
+  &.v-warning {
+
+    color: $--bg-warning-heavier;
+    background-color: $--bg-warning-plain;
+
+    & > .v-delete {
+
+      color: $--bg-warning;
+
+      &:hover {
+        color: $--bg-warning-heavier;
+      }
+    }
+  }
+
+  &.v-danger {
+
+    color: $--bg-danger-heavier;
+    background-color: $--bg-danger-plain;
+
+    & > .v-delete {
+
+      color: $--bg-danger;
+
+      &:hover {
+        color: $--bg-danger-heavier;
+      }
+    }
+  }
+}
+
+.v-tag {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #909399;
+  white-space: nowrap;
+  background-color: #f0f2f5;
+  vertical-align: middle;
+
+  &.v-show {
+    display: inline-block;
+  }
+
+  &.v-hide {
+    display: none;
+  }
+
+  .v-delete {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: inherit;
+    color: #c0c4cc;
+
+    &:hover {
+      color: #909399;
+    }
+  }
+
+  @include tag-type();
+}
+

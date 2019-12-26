@@ -1,0 +1,21 @@
+
+.v-backtop {
+  position: fixed;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #409eff;
+  font-weight: normal;
+  font-size: 14px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .12);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f2f6fc;;
+  }
+}

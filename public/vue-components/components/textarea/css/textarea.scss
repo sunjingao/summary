@@ -1,0 +1,19 @@
+
+.v-textarea {
+  resize: vertical;
+  border: 1px solid #dcdfe6;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #606266;
+  font-size: .85rem;
+  line-height: 1.5;
+
+  &:hover {
+    border-color: #c0c4cc;
+  }
+
+  &:focus {
+    border-color: #409eff;
+  }
+}
+

@@ -1,0 +1,88 @@
+
+@import "../../../css/popper/arrow";
+@import "../../../css/animation/transition";
+
+.v-select {
+
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  .v-input-content {
+    padding: 0 26px 0 15px !important;
+  }
+
+  .v-select-direction {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 0;
+    width: 26px;
+    text-align: center;
+    pointer-events: none;
+
+    > i {
+
+      display: inline-block;
+      @include v-transition-time();
+
+      &.v-up {
+        transform-origin: center center;
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+
+  .v-popper {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+
+    .v-popper-content {
+
+      padding: 5px 0;
+      max-height: 300px;
+      overflow: auto;
+    }
+
+    @include arrowLeftDeviation();
+  }
+
+  // 下面是 multiple 的
+  .v-multiple-reference {
+
+    border: 1px solid #dcdfe6;
+    padding: 0 15px 5px 15px;
+    overflow: auto;
+    border-radius: 5px;
+    outline: none;
+
+    &:hover {
+      border-color: #c0c4cc;
+    }
+
+    &:focus {
+      border-color: #409eff;
+    }
+
+    & > .v-tag {
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+
+    .v-self-placeholder {
+      display: inline-block;
+      margin-top: 5px;
+      color: #bfbfbf;
+    }
+  }
+
+}
+

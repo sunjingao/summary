@@ -1,0 +1,12 @@
+{
+  "name": "underscore",
+  "version": "1.0.0",
+  "description": "",
+  "author": "sunja",
+  "scripts": {
+    "dev": "webpack-dev-server --env.type=development --hot --inline --progress",
+    "build": "webpack  --env.type=build --progress",
+    "build:modules": "webpack --config ../../dll/webpack_dll.config.js"
+  },
+  "license": "ISC"
+}

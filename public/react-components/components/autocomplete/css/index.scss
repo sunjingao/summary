@@ -1,0 +1,43 @@
+
+@import "../../../css/popper/arrow";
+
+.v-autocomplete {
+
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  .v-popper {
+    width: 100%;
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+
+    .v-popper-content {
+
+      padding: 5px 0;
+      max-height: 300px;
+      overflow: auto;
+
+      .v-popper-item {
+        padding: 0 15px;
+        line-height: 2;
+        font-size: 14px;
+        color: #606266;
+        white-space: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .v-popper-item:hover,
+      .v-popper-item.active{
+        background-color: #f5f7fa;
+      }
+    }
+
+    @include arrowLeftDeviation();
+  }
+}
+
