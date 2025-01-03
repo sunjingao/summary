@@ -1,6 +1,6 @@
 ## 展示及使用文档
 + [重构](https://sunjingao.github.io/restructure/dist/index.html)
-+ [vue3组件库（依赖开源组件库，已在生产上应用） 展示及使用文档](https://sunjingao.github.io/mo-web-components/dist/index.html)
++ [vue3组件库（依赖开源组件库，已在生产上应用） 展示及使用文档](https://sunjingao.github.io/mo-web-components/dist-doc/index.html)
 + [vue3组件库（依赖开源组件库，已在生产上应用） 源码](https://github.com/sunjingao/mo-web-components)
 + [前端规范](https://sunjingao.github.io/project-rule/dist/index.html)
   
