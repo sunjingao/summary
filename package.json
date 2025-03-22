@@ -25,7 +25,7 @@
     "html-webpack-plugin": "^3.2.0",
     "markdown-it-anchor": "^5.0.2",
     "markdown-it-container": "^2.0.0",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "open-browser-webpack-plugin": "0.0.5",
