@@ -22,7 +22,7 @@
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "markdown-it-anchor": "^5.0.2",
     "markdown-it-container": "^2.0.0",
     "marked": "^0.7.0",
@@ -44,7 +44,7 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.30.0",
     "webpack-bundle-analyzer": "^3.0.3",
-    "webpack-cli": "^3.2.1",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
   },
